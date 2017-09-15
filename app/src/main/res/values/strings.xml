@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tour Guide</string>
+    <string name="category_hotels">Hotels</string>
+    <string name="category_mosques">Mosques</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_restaurants">Restaurants</string>
+</resources>
