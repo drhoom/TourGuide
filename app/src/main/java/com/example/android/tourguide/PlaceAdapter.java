@@ -20,27 +20,37 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View listItemView = convertView;
-        if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item, parent, false);
+
+        ViewHolder holder;
+
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+            holder = new ViewHolder();
+            holder.nameTextView =  convertView.findViewById(R.id.name_text_view);
+            holder.descriptionTextView =  convertView.findViewById(R.id.description_text_view);
+            holder.imageView =  convertView.findViewById(R.id.image);
+            convertView.setTag(holder);
+        }else{
+            holder = (ViewHolder) convertView.getTag();
         }
-        
+
         Place currentPlace = getItem(position);
 
-        TextView nameTextView =  listItemView.findViewById(R.id.name_text_view);
-        nameTextView.setText(currentPlace.getPlaceName());
+        holder.nameTextView.setText(currentPlace.getPlaceName());
+        holder.descriptionTextView.setText(currentPlace.getPlaceDescription());
 
-        TextView descriptionTextView =  listItemView.findViewById(R.id.description_text_view);
-        descriptionTextView.setText(currentPlace.getPlaceDescription());
-
-        ImageView imageView =  listItemView.findViewById(R.id.image);
         if (currentPlace.hasImage()) {
-            imageView.setImageResource(currentPlace.getImageResourceId());
-            imageView.setVisibility(View.VISIBLE);
+            holder.imageView.setImageResource(currentPlace.getImageResourceId());
+            holder.imageView.setVisibility(View.VISIBLE);
         } else {
-            imageView.setVisibility(View.GONE);
+            holder.imageView.setVisibility(View.GONE);
         }
-        return listItemView;
+        return convertView;
+    }
+
+    private static class ViewHolder {
+        TextView nameTextView;
+        TextView descriptionTextView;
+        ImageView imageView;
     }
 }

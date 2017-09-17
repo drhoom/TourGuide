@@ -14,8 +14,8 @@ public class MosquesActivity extends AppCompatActivity {
         setContentView(R.layout.place_list);
 
         final ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("King Khalid Grand Mosque", "Located in Umm Al Hamam | Umm Al Hamam Al Gharbi"));
-        places.add(new Place("Al Rajhi Grand Mosque", "Located in Eastern Ring Branch Rd, Al Jazirah"));
+        places.add(new Place(getString(R.string.kingKhalidGrandMosque),getString(R.string.kingKhalidGrandMosque_desc)));
+        places.add(new Place(getString(R.string.alRajhiGrandMosque),getString(R.string.alRajhiGrandMosque_desc)));
         PlaceAdapter adapter = new PlaceAdapter(this, places);
 
         ListView listView = (ListView) findViewById(R.id.list);

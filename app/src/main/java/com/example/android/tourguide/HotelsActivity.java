@@ -19,8 +19,8 @@ public class HotelsActivity extends AppCompatActivity {
         setContentView(R.layout.place_list);
 
         final ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Burj Rafal Kempinski", "Riyadh's Tallest Residential Tower", R.drawable.burj_rafal));
-        places.add(new Place("The Ritz-Carlton", "A lush, palatial retreat in the heart of Riyadh", R.drawable.the_ritz_carlton));
+        places.add(new Place(getString(R.string.burj_rafal_kempinski),getString(R.string.burj_rafal_kempinski_desc), R.drawable.burj_rafal));
+        places.add(new Place(getString(R.string.the_ritz_carlton),getString(R.string.the_ritz_carlton_desc), R.drawable.the_ritz_carlton));
         PlaceAdapter adapter = new PlaceAdapter(this, places);
 
         ListView listView = (ListView) findViewById(R.id.list);

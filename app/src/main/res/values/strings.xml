@@ -4,4 +4,20 @@
     <string name="category_mosques">Mosques</string>
     <string name="category_shopping">Shopping</string>
     <string name="category_restaurants">Restaurants</string>
+    <string name="burj_rafal_kempinski">Burj Rafal Kempinski</string>
+    <string name="the_ritz_carlton">The Ritz-Carlton</string>
+    <string name="burj_rafal_kempinski_desc">Riyadh\'s Tallest Residential Tower</string>
+    <string name="the_ritz_carlton_desc">A lush, palatial retreat in the heart of Riyadh</string>
+    <string name="kingKhalidGrandMosque">King Khalid Grand Mosque</string>
+    <string name="kingKhalidGrandMosque_desc">Located in Umm Al Hamam | Umm Al Hamam Al Gharbi</string>
+    <string name="alRajhiGrandMosque">Al Rajhi Grand Mosque</string>
+    <string name="alRajhiGrandMosque_desc">Located in Eastern Ring Branch Rd, Al Jazirah</string>
+    <string name="lusin">Lusin</string>
+    <string name="lusin_desc">The Armenian culture food restaurant</string>
+    <string name="nozomi">Nozomi</string>
+    <string name="nozomi_desc">World class contemporary Japanese cuisine</string>
+    <string name="alNakheelMall">Al Nakheel Mall</string>
+    <string name="alNakheelMall_desc">Synonymous with style and success and a key destination in Riyadh</string>
+    <string name="panoramaMall">Panorama Mall</string>
+    <string name="panoramaMall_desc">You can find a lot of global brands here!!</string>
 </resources>
